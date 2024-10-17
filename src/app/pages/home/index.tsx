@@ -121,9 +121,9 @@ const Home: FC = () => {
 
           <div className='w-full bg-primary grid grid-cols-2'>
             <div className='py-[42px] pl-8 flex flex-col justify-end'>
-              <h2 className='text-app-black font-poppins text-[34px]/[28px] font-medium tracking-[-0.6px]'>
-                Living Room
-              </h2>
+                <h2 className='text-app-black font-poppins text-[28px]/[34px] md:text-[34px]/[28px] font-medium tracking-[-0.6px] md:tracking-[-0.6px]'>
+                  Living Room
+                </h2>
               <a className='flex gap-1 items-center cursor-pointer mt-3 border-b border-app-black w-fit'>
                 <p className='text-app-black font-inter text-sm font-medium leading-[24px]'>Shop Now</p>
                 <img src="/images/arrow-right-carousel.svg" alt="arrow right" className='h-[18px] w-[18px]' />
