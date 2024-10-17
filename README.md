@@ -108,7 +108,4 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 ```
 
-### Key sections to update:
-- Replace the placeholders (e.g., `yourusername/your-repo-name`) with the actual GitHub repo details.
-- Add a `LICENSE` file if you haven't already, or link to it accordingly.
 
