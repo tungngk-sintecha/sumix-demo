@@ -10,3 +10,4 @@ export { default as ProfilePage } from './product';
 export { default as ContactPage } from './contact';
 export { default as ForgotPassword } from './auth/password';
 export { default as OtpPage } from './auth/otp';
+export { default as ErrorPage } from './error';

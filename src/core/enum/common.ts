@@ -11,4 +11,5 @@ export enum ROUTES {
   CONTACT = '/contact',
   FORGOT_PASSWORD = '/forgot-password',
   OTP_PAGE = '/otp',
+  ERROR_PAGE = '/error',
 }
