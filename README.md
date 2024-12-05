@@ -32,7 +32,7 @@ To run this project locally, follow these steps:
 2. **Navigate to the project directory:**
 
    ```bash
-   cd your-repo-name
+   cd 3legant
    ```
 
 3. **Install dependencies:**
