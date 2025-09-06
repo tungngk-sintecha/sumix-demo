@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1f4e1b4c-85d2-4dc5-8b0b-5baf9f437601",
+    "name": "Classic White T-Shirt",
+    "price": 25.99,
+    "image": "https://picsum.photos/seed/tshirt/300/300",
+    "sku": {
+      "color": "White",
+      "size": "M"
+    },
+    "discount": 0.1,
+    "shipping_fee": 4.99,
+    "quantity": 1
+  },
+  {
+    "id": "88ec1e9a-2e1a-445f-baa3-60e94c86740d",
+    "name": "Running Sneakers",
+    "price": 89.99,
+    "image": "https://picsum.photos/seed/sneakers/300/300",
+    "sku": {
+      "color": "Black/Red",
+      "size": "42 EU"
+    },
+    "discount": 0.15,
+    "shipping_fee": 0,
+    "quantity": 1
+  },
+  {
+    "id": "27d7d0cf-c872-45bc-81e2-becbb5ddda88",
+    "name": "Leather Wallet",
+    "price": 45.0,
+    "image": "https://picsum.photos/seed/wallet/300/300",
+    "sku": {
+      "color": "Brown",
+      "size": "One Size"
+    },
+    "discount": 0.5,
+    "shipping_fee": 2.99,
+    "quantity": 1
+  },
+  {
+    "id": "70f2cf7d-bd5e-41d5-bbcb-177efb2eeb40",
+    "name": "Noise Cancelling Headphones",
+    "price": 129.5,
+    "image": "https://picsum.photos/seed/headphones/300/300",
+    "sku": {
+      "color": "Silver",
+      "size": "Standard"
+    },
+    "discount": 0.2,
+    "shipping_fee": 5.0,
+    "quantity": 1
+  },
+  {
+    "id": "b07fd0f3-52b3-4df4-8042-3c3369fcf89d",
+    "name": "Smartwatch Series 7",
+    "price": 199.99,
+    "image": "https://picsum.photos/seed/smartwatch/300/300",
+    "sku": {
+      "color": "Midnight Blue",
+      "size": "44mm"
+    },
+    "discount": 0.25,
+    "shipping_fee": 0,
+    "quantity": 1
+  },
+  {
+    "id": "b9437b9c-f19b-47a2-a7f0-5c6f9e5f1d7c",
+    "name": "Yoga Mat",
+    "price": 29.99,
+    "image": "https://picsum.photos/seed/yogamat/300/300",
+    "sku": {
+      "color": "Purple",
+      "size": "72 x 24 inches"
+    },
+    "discount": 0,
+    "shipping_fee": 3.5,
+    "quantity": 1
+  }
+]

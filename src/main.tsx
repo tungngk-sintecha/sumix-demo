@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+
 import "flowbite";
 import "@/global.css";
 import { I18nextProvider } from "react-i18next";
@@ -14,5 +15,6 @@ createRoot(document.getElementById("root")!).render(
       <App />
       <ToastContainer />
     </I18nextProvider>
+
   </StrictMode>
 );
