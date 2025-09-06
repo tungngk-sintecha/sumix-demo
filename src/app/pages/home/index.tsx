@@ -1,9 +1,7 @@
 import { FC } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 const Home: FC = () => {

@@ -1,19 +1,32 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header: FC = () => {
-  const [open, setOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  const navLinks = [
-    { name: "Category 1", url: "/shop/category-1" },
-    { name: "Category 2", url: "/shop/category-2" },
-    { name: "Category 3", url: "/shop/category-3" },
-    { name: "Category 4", url: "/shop/category-4" },
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // scrolling down → hide navbar
+        setShow(false);
+      } else {
+        // scrolling up → show navbar
+        setShow(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <header className="bg-black/90 backdrop-blur-sm border-b border-cyan-500/30 sticky top-0 z-50 transition-all duration-300">
+    <header
+      className={`bg-black/90 backdrop-blur-sm border-b border-cyan-500/30 
+  fixed top-0 left-0 w-full z-50 transition-transform duration-300 
+  ${show ? "translate-y-0" : "-translate-y-full"}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Left section */}

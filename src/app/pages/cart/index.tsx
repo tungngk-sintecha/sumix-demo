@@ -1,7 +1,5 @@
 import Process from "@/core/components/Process";
-import { useCartSlice } from "@/store/features/cart.slice";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import data from "../../../mock/data.json";
@@ -14,7 +12,6 @@ export default function CartPage() {
   const [selectedOption, setSelectedOption] = useState("");
   //   const { cart } = useCartSlice();
   const [cart, setCart] = useState(data);
-  const dispatch = useDispatch();
 
   const [selectedItemIds, setSelectedItemIds] = useState<string[]>([]);
 
