@@ -5,7 +5,7 @@ export default function ShopPage() {
   const { category } = params;
 
   return (
-    <section className="px-8 lg:px-14">
+    <section className="px-8 lg:px-14 max-w-[1440px] mx-auto mt-20">
       <div className="shop-page-banner-bg min-h-[308px] md:h-[392px] max-h-[392px] flex justify-center items-center">
         <div className="max-w-fit flex flex-col items-center gap-4 md:gap-6">
           <div className="w-fit flex gap-4">

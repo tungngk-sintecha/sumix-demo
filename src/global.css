@@ -1,5 +1,4 @@
-
-@import 'flowbite';
+@import "flowbite";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +8,8 @@
 }
 
 .smooth-shadow {
-  box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.00),
-    0px 5px 4px rgba(3, 7, 18, 0.01),
-    0px 12px 9px rgba(3, 7, 18, 0.01),
-    0px 20px 15px rgba(3, 7, 18, 0.02),
+  box-shadow: 0px 1px 1px rgba(3, 7, 18, 0), 0px 5px 4px rgba(3, 7, 18, 0.01),
+    0px 12px 9px rgba(3, 7, 18, 0.01), 0px 20px 15px rgba(3, 7, 18, 0.02),
     0px 32px 24px rgba(3, 7, 18, 0.02);
 }
 
@@ -23,20 +20,19 @@
 
 /* Login Page */
 .login-background {
-  background:
-    url('/images/login-img.png') no-repeat center center;
-  background-color: #F3F5F7;
+  background: url("/images/login-img.png") no-repeat center center;
+  background-color: #f3f5f7;
   background-size: contain;
   height: 100%;
 }
 
 .placeholder-inter::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  color: #6C7275;
+  color: #6c7275;
   text-transform: capitalize;
 }
 
@@ -105,10 +101,14 @@
 }
 
 .shop-page-banner-bg {
-  background:
-    linear-gradient(180deg, rgba(243, 245, 247, 0.00) 27.68%, rgba(243, 245, 247, 0.60) 66.63%, rgba(243, 245, 247, 0.20) 100%),
-    url('/images/shop-bg.png') lightgray 50% / cover no-repeat;
-  background-color: #F3F5F7;
+  background: linear-gradient(
+      180deg,
+      rgba(243, 245, 247, 0) 27.68%,
+      rgba(243, 245, 247, 0.6) 66.63%,
+      rgba(243, 245, 247, 0.2) 100%
+    ),
+    url("/images/shop-bg.png") lightgray 50% / cover no-repeat;
+  background-color: #f3f5f7;
   background-blend-mode: normal, multiply;
 }
 
@@ -148,7 +148,6 @@
   transform: translateY(0);
 }
 
-
 .hide-spinner {
   appearance: none;
   -moz-appearance: textfield;
@@ -156,8 +155,24 @@
   margin: 0;
 }
 
-
 .hide-spinner::-webkit-inner-spin-button,
 .hide-spinner::-webkit-outer-spin-button {
   display: none;
+}
+
+.char-stagger {
+  display: inline-block;
+  opacity: 0;
+  animation: charStagger 0.6s ease-out forwards;
+}
+
+@keyframes charStagger {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

@@ -4,8 +4,8 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-
-import { UserReducer } from './features/user.slice';
+import { UserReducer } from "./features/user.slice";
+import { CartReducer } from "./features/cart.slice";
 
 const persistConfig = {
   key: "root",
@@ -17,14 +17,14 @@ const persistedReducer = persistReducer(persistConfig, UserReducer);
 const rootMiddleware: Middleware[] = [];
 const rootReducer = combineReducers({
   user: persistedReducer,
+  cart: CartReducer,
 });
 
-
 const store = configureStore({
-    reducer: rootReducer,
-    middleware: (getDefaultMiddleware) => {
-      return getDefaultMiddleware().concat(rootMiddleware);
-    },
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(rootMiddleware);
+  },
 });
 
 const persistor = persistStore(store);
