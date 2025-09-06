@@ -1,10 +1,9 @@
-import { FC } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { FC } from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import ReduxProvider from '@/store/provider';
-import Layout from '@/core/components/Layout';
-import AppRoutes from './routes';
-
+import ReduxProvider from "@/store/provider";
+import Layout from "@/core/components/Layout";
+import AppRoutes from "./routes";
 
 export const App: FC = () => {
   return (
@@ -17,6 +16,5 @@ export const App: FC = () => {
     </ReduxProvider>
   );
 };
-
 
 export default App;
