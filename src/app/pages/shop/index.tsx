@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function ShopPage() {
   const params = useParams();
@@ -226,64 +226,66 @@ export default function ShopPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-20">
             {Array.from({ length: 9 }, (_, idx) => (
-              <div key={idx}>
-                <div
-                  style={{
-                    background: "url(/images/product-one.png)",
-                    backgroundPosition: "center",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                  }}
-                  className="bg-primary h-[308px] md:h-[349px] py-4 px-3 md:p-4 flex flex-col justify-between"
-                >
-                  <div className="flex justify-between items-center ">
-                    <div>
-                      <div className="px-3 py-1 bg-white rounded">
-                        <p className="text-app-black font-inter text-base font-bold uppercase">
-                          New
-                        </p>
+              <Link to={`/product/item-${idx}`}>
+                <div key={idx}>
+                  <div
+                    style={{
+                      background: "url(/images/product-one.png)",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                    className="bg-primary h-[308px] md:h-[349px] py-4 px-3 md:p-4 flex flex-col justify-between"
+                  >
+                    <div className="flex justify-between items-center ">
+                      <div>
+                        <div className="px-3 py-1 bg-white rounded">
+                          <p className="text-app-black font-inter text-base font-bold uppercase">
+                            New
+                          </p>
+                        </div>
+                        <div className="px-3 py-1 bg-app-green rounded mt-2">
+                          <p className="text-white font-inter text-base font-bold uppercase">
+                            -50%
+                          </p>
+                        </div>
                       </div>
-                      <div className="px-3 py-1 bg-app-green rounded mt-2">
-                        <p className="text-white font-inter text-base font-bold uppercase">
-                          -50%
-                        </p>
+                      <div className="bg-white p-1.5 rounded-3xl h-8 w-8 shadow-wishlist-icon">
+                        <img
+                          src="/images/wishlist.svg"
+                          alt="whishlist"
+                          className="h-5 w-5"
+                        />
                       </div>
                     </div>
-                    <div className="bg-white p-1.5 rounded-3xl h-8 w-8 shadow-wishlist-icon">
-                      <img
-                        src="/images/wishlist.svg"
-                        alt="whishlist"
-                        className="h-5 w-5"
-                      />
+                    <button className="text-white text-center font-inter text-base/6 md:text-base/7 font-medium tracking-[-0.4px] bg-app-black rounded-lg w-full px-4 md:px-10 py-2 md:py-[10px]">
+                      Add to cart
+                    </button>
+                  </div>
+                  <div className="mt-3">
+                    <div className="flex gap-0.5 mb-2">
+                      {Array.from({ length: 5 }, (_, idx) => (
+                        <img
+                          key={idx}
+                          src="/images/star-icon.svg"
+                          alt="star icon"
+                        />
+                      ))}
+                    </div>
+                    <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
+                      Loveseat Sofa
+                    </h3>
+                    <div className="flex gap-3.5 items-center">
+                      <p className="text-app-black font-inter text-sm/[22px] font-semibold">
+                        $199.00
+                      </p>
+                      <p className="text-app-gray font-inter text-sm/[22px] font-semibold">
+                        $400.00
+                      </p>
                     </div>
                   </div>
-                  <button className="text-white text-center font-inter text-base/6 md:text-base/7 font-medium tracking-[-0.4px] bg-app-black rounded-lg w-full px-4 md:px-10 py-2 md:py-[10px]">
-                    Add to cart
-                  </button>
                 </div>
-                <div className="mt-3">
-                  <div className="flex gap-0.5 mb-2">
-                    {Array.from({ length: 5 }, (_, idx) => (
-                      <img
-                        key={idx}
-                        src="/images/star-icon.svg"
-                        alt="star icon"
-                      />
-                    ))}
-                  </div>
-                  <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
-                    Loveseat Sofa
-                  </h3>
-                  <div className="flex gap-3.5 items-center">
-                    <p className="text-app-black font-inter text-sm/[22px] font-semibold">
-                      $199.00
-                    </p>
-                    <p className="text-app-gray font-inter text-sm/[22px] font-semibold">
-                      $400.00
-                    </p>
-                  </div>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="flex justify-center">

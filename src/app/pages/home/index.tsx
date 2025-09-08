@@ -588,35 +588,39 @@ const Home: FC = () => {
 
             <div className="flex gap-x-3">
               {Array.from({ length: 6 }, (_, idx) => (
-                <div key={idx} className="cursor-pointer">
-                  <div className="w-full">
-                    <img
-                      src="/images/product-one.png"
-                      className="w-[210px] h-[210px] min-h-[210px] object-cover"
-                      alt=""
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
-                      Loveseat Sofa
-                    </h3>
-                    <div className="flex gap-3.5 items-center">
-                      <p className="text-app-black font-inter text-sm/[22px] font-semibold">
-                        <span className="text-[14px]">$</span>
-                        <span className="font-bold text-[22px]">199.00</span>
-                      </p>
-                      <p className="line-through text-app-gray font-inter text-[12px]/[14px] font-semibold">
-                        $400.00
-                      </p>
+                <Link to={`/product/item-${idx}`}>
+                  <div key={idx} className="cursor-pointer">
+                    <div className="w-full">
+                      <img
+                        src="/images/product-one.png"
+                        className="w-[210px] h-[210px] min-h-[210px] object-cover"
+                        alt=""
+                      />
                     </div>
-                    <div>
-                      <div className="bg-red-500 inline-block text-white px-2 mt-2">
-                        Sale
+                    <div className="mt-3">
+                      <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
+                        Loveseat Sofa
+                      </h3>
+                      <div className="flex gap-3.5 items-center">
+                        <p className="text-app-black font-inter text-sm/[22px] font-semibold">
+                          <span className="text-[14px]">$</span>
+                          <span className="font-bold text-[22px]">199.00</span>
+                        </p>
+                        <p className="line-through text-app-gray font-inter text-[12px]/[14px] font-semibold">
+                          $400.00
+                        </p>
                       </div>
-                      <span className="ml-2 font-bold text-red-500">-51%</span>
+                      <div>
+                        <div className="bg-red-500 inline-block text-white px-2 mt-2">
+                          Sale
+                        </div>
+                        <span className="ml-2 font-bold text-red-500">
+                          -51%
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
             <Link to={"shop/JDirectItemsAuction"}>
@@ -647,35 +651,39 @@ const Home: FC = () => {
 
             <div className="flex gap-x-3">
               {Array.from({ length: 6 }, (_, idx) => (
-                <div key={idx} className="cursor-pointer">
-                  <div className="w-full">
-                    <img
-                      src="/images/product-one.png"
-                      className="w-[210px] h-[210px] min-h-[210px] object-cover"
-                      alt=""
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
-                      Loveseat Sofa
-                    </h3>
-                    <div className="flex gap-3.5 items-center">
-                      <p className="text-app-black font-inter text-sm/[22px] font-semibold">
-                        <span className="text-[14px]">$</span>
-                        <span className="font-bold text-[22px]">199.00</span>
-                      </p>
-                      <p className="line-through text-app-gray font-inter text-[12px]/[14px] font-semibold">
-                        $400.00
-                      </p>
+                <Link to={`/product/item-${idx}`}>
+                  <div key={idx} className="cursor-pointer">
+                    <div className="w-full">
+                      <img
+                        src="/images/product-one.png"
+                        className="w-[210px] h-[210px] min-h-[210px] object-cover"
+                        alt=""
+                      />
                     </div>
-                    <div>
-                      <div className="bg-red-500 inline-block text-white px-2 mt-2">
-                        Sale
+                    <div className="mt-3">
+                      <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
+                        Loveseat Sofa
+                      </h3>
+                      <div className="flex gap-3.5 items-center">
+                        <p className="text-app-black font-inter text-sm/[22px] font-semibold">
+                          <span className="text-[14px]">$</span>
+                          <span className="font-bold text-[22px]">199.00</span>
+                        </p>
+                        <p className="line-through text-app-gray font-inter text-[12px]/[14px] font-semibold">
+                          $400.00
+                        </p>
                       </div>
-                      <span className="ml-2 font-bold text-red-500">-51%</span>
+                      <div>
+                        <div className="bg-red-500 inline-block text-white px-2 mt-2">
+                          Sale
+                        </div>
+                        <span className="ml-2 font-bold text-red-500">
+                          -51%
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
             <Link to={"shop/JDirectItemsAuction"}>
@@ -706,35 +714,39 @@ const Home: FC = () => {
 
             <div className="flex gap-x-3">
               {Array.from({ length: 6 }, (_, idx) => (
-                <div key={idx} className="cursor-pointer">
-                  <div className="w-full">
-                    <img
-                      src="/images/product-one.png"
-                      className="w-[210px] h-[210px] min-h-[210px] object-cover"
-                      alt=""
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
-                      Loveseat Sofa
-                    </h3>
-                    <div className="flex gap-3.5 items-center">
-                      <p className="text-app-black font-inter text-sm/[22px] font-semibold">
-                        <span className="text-[14px]">$</span>
-                        <span className="font-bold text-[22px]">199.00</span>
-                      </p>
-                      <p className="line-through text-app-gray font-inter text-[12px]/[14px] font-semibold">
-                        $400.00
-                      </p>
+                <Link to={`/product/item-idx`}>
+                  <div key={idx} className="cursor-pointer">
+                    <div className="w-full">
+                      <img
+                        src="/images/product-one.png"
+                        className="w-[210px] h-[210px] min-h-[210px] object-cover"
+                        alt=""
+                      />
                     </div>
-                    <div>
-                      <div className="bg-red-500 inline-block text-white px-2 mt-2">
-                        Sale
+                    <div className="mt-3">
+                      <h3 className="mb-2 text-app-black font-inter text-base/[26px] font-medium">
+                        Loveseat Sofa
+                      </h3>
+                      <div className="flex gap-3.5 items-center">
+                        <p className="text-app-black font-inter text-sm/[22px] font-semibold">
+                          <span className="text-[14px]">$</span>
+                          <span className="font-bold text-[22px]">199.00</span>
+                        </p>
+                        <p className="line-through text-app-gray font-inter text-[12px]/[14px] font-semibold">
+                          $400.00
+                        </p>
                       </div>
-                      <span className="ml-2 font-bold text-red-500">-51%</span>
+                      <div>
+                        <div className="bg-red-500 inline-block text-white px-2 mt-2">
+                          Sale
+                        </div>
+                        <span className="ml-2 font-bold text-red-500">
+                          -51%
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
             <Link to={"shop/JDirectItemsAuction"}>
