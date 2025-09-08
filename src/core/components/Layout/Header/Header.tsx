@@ -137,26 +137,28 @@ const Header: FC = () => {
             </button>
 
             {/* Cart button */}
-            <button className="inline-flex items-center justify-center rounded-xl hover-lift press focus-glow ring-0 border transition-all font-bold bg-cyan-500 text-black border-cyan-400/30 hover:bg-cyan-400 px-6 py-3 text-sm hidden md:flex items-center space-x-2 pixel-button relative overflow-hidden group">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-shopping-cart w-4 h-4"
-              >
-                <circle cx="8" cy="21" r="1"></circle>
-                <circle cx="19" cy="21" r="1"></circle>
-                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-              </svg>
-              <span className="font-medium">0</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
-            </button>
+            <Link to="/cart">
+              <button className="inline-flex items-center justify-center rounded-xl hover-lift press focus-glow ring-0 border transition-all font-bold bg-cyan-500 text-black border-cyan-400/30 hover:bg-cyan-400 px-6 py-3 text-sm hidden md:flex items-center space-x-2 pixel-button relative overflow-hidden group">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-shopping-cart w-4 h-4"
+                >
+                  <circle cx="8" cy="21" r="1"></circle>
+                  <circle cx="19" cy="21" r="1"></circle>
+                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                </svg>
+                <span className="font-medium">0</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500"></div>
+              </button>
+            </Link>
 
             {/* Business button */}
             <div className="relative">
